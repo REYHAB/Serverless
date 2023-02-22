@@ -1,4 +1,4 @@
-# Serverless TODO: Udacity Cloud Developer Nanodegree - Project 4
+# Serverless TODO: Udacity Cloud Developer Nanodegree - Project 4 - Rahab Wanjiku
 
 Simple Todo application developed using Serverless framework, AWS Lambda, Amazon API Gateway, Amazon DynamoDB, Amazon S3, AWS X-Ray, and Auth0 
 
@@ -33,15 +33,6 @@ React application consuming the serverless backend api (in the `client/` directo
 
 ## Serverless Framework
 
-### Serverless Dashboard
-<img src='deployment_screenshots/serverless-dashboard-screenshot.PNG'>
-
-### Service Information
-
-<img src='deployment_screenshots/service-information-screenshot.PNG'>
-
-## Authentication
-<img src='deployment_screenshots/auth0-login.PNG'>
 
 ## Database
 Amazon DynamoDB table which stores users' Todo items
@@ -52,13 +43,3 @@ KeySchema:
       - AttributeName: todoId
         KeyType: RANGE
 ```
-<img src='deployment_screenshots/amazon-dynamodb.PNG'>
-
-## File Strorage
-Amazon S3 bucket that stores Todo items attachment images
-
-<img src='deployment_screenshots/amazon-s3.PNG'>
-
-## AWS X-RAY Service Map
-
-<img src='deployment_screenshots/aws-xray-service-map.PNG'>

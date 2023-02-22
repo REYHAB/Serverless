@@ -1,6 +1,6 @@
-org: brandonodiwuor
-app: serverless-todo-app
-service: serverless-todo-app
+org: murigap
+app: rahab
+service: rahab-serverless-todo-app
 
 plugins:
   - serverless-webpack
@@ -26,7 +26,7 @@ provider:
     TODOS_CREATED_AT_INDEX: CreatedAtIndex
     ATTACHMENT_S3_BUCKET: brandon-serverless-todo-images-${self:provider.stage}
     SIGNED_URL_EXPIRATION: 300
-    AUTH0_JWKS_URL: https://dev-1ealnulz.us.auth0.com/.well-known/jwks.json
+    AUTH0_JWKS_URL: https://muriga.auth0.com/.well-known/jwks.json
 
   logs:
     restApi: true

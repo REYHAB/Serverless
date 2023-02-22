@@ -78,12 +78,12 @@ async function getCertificate(kid: string): Promise<string> {
   const keys = response.data.keys;
 
   if (!keys || !keys.length)
-    throw new Error('The JWKS endpoint did not contain any keys');
+    throw new Error('The JWKS  endpoint provided did not contain any keys');
 
   const signingKeys = getSigningKeys(keys);
 
   if (!signingKeys.length)
-    throw new Error('The JWKS endpoint did not contain any signature verification keys');
+    throw new Error('The JWKS  endpoint provided did not contain any signature verification keys');
   
   const key = getSigningKey(signingKeys, kid);
 
@@ -129,7 +129,7 @@ function getToken(authHeader: string): string {
   if (!authHeader) throw new Error('No authentication header')
 
   if (!authHeader.toLowerCase().startsWith('bearer '))
-    throw new Error('Invalid authentication header')
+    throw new Error('Invalid token authentication header')
 
   const split = authHeader.split(' ')
   const token = split[1]
